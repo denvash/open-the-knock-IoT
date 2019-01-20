@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="opentheknock.App">
+    <Application.Resources>
+        <!-- Application resource dictionary -->
+        <ResourceDictionary>
+            <ControlTemplate x:Key="MainPageTemplate">
+
+                <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Begin Header -->
+                    <StackLayout Grid.Row="0" BackgroundColor="#5ABAFF" Padding="30,30,30,30">
+                        <Label FontSize="Large" TextColor="#FFFFFF" Text="Open The Knock" />
+                    </StackLayout>
+                    <!-- End Header -->
+
+                    <!-- Begin Content -->
+                    <ScrollView Grid.Column="0" Grid.Row="1">
+                        <ContentPresenter VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+                    </ScrollView>
+                    <!-- End Content -->
+
+                </Grid>
+            </ControlTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

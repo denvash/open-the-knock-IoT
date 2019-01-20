@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="opentheknock.Welcome"
+             ControlTemplate="{StaticResource MainPageTemplate}"
+             Title="Welcome">
+
+
+    <StackLayout x:Name="WelcomeLayout" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+
+        <Image Source="logo.png" WidthRequest="300"/>
+              
+        <ActivityIndicator x:Name="Loading" Color="Red" IsRunning="true" IsVisible="False" Margin="0, 40, 0, 0"/>
+
+        <Picker x:Name="UserIdInput" WidthRequest="250" Margin="0, 40, 0, 0" Title="Select user ID" SelectedIndexChanged="OnIndexChange">
+            <Picker.Items>
+                <x:String>1</x:String>
+                <x:String>2</x:String>
+                <x:String>3</x:String>
+                <x:String>4</x:String>
+                <x:String>5</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Button x:Name="LoginButton" Text="Login" Margin="10" Clicked="OnLoginClicked" />
+
+    </StackLayout>
+
+</ContentPage>
+

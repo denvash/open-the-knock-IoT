@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="opentheknock.MainPage"
+             ControlTemplate="{StaticResource MainPageTemplate}"
+             Title="Main Page">
+    <ContentPage.Content>
+
+        <StackLayout VerticalOptions="CenterAndExpand" 
+                     HorizontalOptions="CenterAndExpand">
+
+            <StackLayout x:Name="MainPageContent" Margin="0,0,0,30"></StackLayout>
+
+
+            <StackLayout Margin="0,0,0,40">
+                <Label Text="Lock settings and challenge options:"/>
+                <Button x:Name="ToggleLock" Text="Open lock" Clicked="OpenButtonClicked"/>
+                <Button x:Name="SetChallenge" Text="Set / Update Challenges" Clicked="OnSetChallengeClicked" />
+            </StackLayout>
+
+            <ActivityIndicator x:Name="Loading" Color="Red" IsRunning="true" IsVisible="False" Margin="0,0,0,60"/>
+
+            <!-- Start of Email address and notifications -->
+            <StackLayout Margin="0,0,0,60">
+                <Label Text="Enter your email address:"/>
+                <Entry WidthRequest="200" x:Name="EmailInput" VerticalOptions="FillAndExpand" 
+                       Text="Enter email address" Margin="5" />
+
+                <Label Text="Recieve notifications about false login attempts:"/>
+                <Switch x:Name="EmailNotificationsInput" IsToggled="true"></Switch>
+
+                <Button x:Name="UpdateEmail" Text="Update email" Clicked="UpdateButtonClicked" />
+
+            </StackLayout>
+            
+            <!-- End of Email address and notifications -->
+
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

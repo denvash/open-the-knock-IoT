@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="opentheknock.SetChallenge"
+             ControlTemplate="{StaticResource MainPageTemplate}"
+             Title="Set Challenge">
+    <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ActivityIndicator Grid.RowSpan="2"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           IsVisible="False"
+                           IsEnabled="True" />
+        <StackLayout x:Name="TopMessage" Grid.Row="0" BackgroundColor="Color.AntiqueWhite" Padding="30,15,30,15">
+        </StackLayout>
+        <StackLayout WidthRequest="300" x:Name="BodyMessage" Grid.Row="1" Padding="30,30,30,30"
+                     VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+
+ 
+            
+            
+
+            <!-- Start of Challenge 1 Layout Section -->
+            <Label Font="MarkerFelt-Thin, 42" TextColor="#000000" Text="Secret Code" Margin="0,30,0,0" />
+            <Label TextColor="#000000" Text="Enter a non-empty string:" Margin="0,0,0,0" />
+            <Entry WidthRequest="200" x:Name="Challenge1Input" VerticalOptions="FillAndExpand" Text="Enter your code"
+                   Margin="5" />
+            <!-- <Button x:Name="Insert1" Text="Insert" Margin="10" Clicked="Challenge1Clicked" /> -->
+            <!-- End of Challenge 1 Layout Section -->
+
+            <!-- Start of Challenge 2 Layout Section -->
+            <Label Font="MarkerFelt-Thin, 42" TextColor="#000000" Text="Secret Table" Margin="0,30,0,0" />
+            <Label TextColor="#000000" Text="Select at least one cell:" />
+            <StackLayout Margin="0,10,0,00" x:Name="Challenge2InputMatrix" HorizontalOptions="Center">
+                <!-- Content (grid) is added dynammically -->
+            </StackLayout>
+            <Entry IsVisible="false" WidthRequest="200" x:Name="Challenge2Input" VerticalOptions="FillAndExpand" Text="Enter your matrix"
+                   Margin="5" />
+            <!-- End of Challenge 2 Layout Section -->
+
+            <!-- Start of Challenge 3 Layout Section -->
+            <Label Font="MarkerFelt-Thin, 42" TextColor="#000000" Text="Secret Pub" Margin="0,30,0,0" />
+            <Label TextColor="#000000" Text="Select between 2 to 5 menu items:" Margin="0,0,0,0" />
+            <!-- <ListView x:Name="Challenge3Drinks"></ListView> -->
+
+            <ListView WidthRequest="200" ItemsSource="{Binding Challenge3Items}" ItemSelected="OnItemSelected">
+                <ListView.HeightRequest>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="iOS">550</On>
+                        <On Platform="Android">550</On>
+                        <On Platform="UWP">220</On>
+                    </OnPlatform>
+                </ListView.HeightRequest>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" >
+                                <!-- the "check" mark -->
+                                <BoxView IsVisible="{Binding IsSelected}"
+                                         WidthRequest="12"
+                                         HeightRequest="12"
+                                         Color="Red" />
+                                <!-- the text/data -->
+                                <Label Text="{Binding Data}"  VerticalOptions="FillAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Entry IsVisible="false" WidthRequest="200" x:Name="Challenge3Input" VerticalOptions="FillAndExpand" Text="Enter your code"
+            Margin="5" />
+            <!-- End of Challenge 3 Layout Section -->
+            <ActivityIndicator x:Name="Loading" Color="Red" IsRunning="true" IsVisible="False" Margin="0,20,0,0"/>
+
+            <Button x:Name="UpdateButton" Text="Update / Set" Margin="30" Clicked="UpdateButtonClicked" />
+
+        </StackLayout>
+
+    </Grid>
+</ContentPage>
+
+
+
