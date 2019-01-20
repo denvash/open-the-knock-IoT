@@ -12,8 +12,8 @@ namespace opentheknock
     public partial class DBManager
     {
         static DBManager defaultInstance = new DBManager();
-        const string accountURL = @"https://otkdb.documents.azure.com:443/";
-        const string accountKey = @"cFn6xDMFVE9PS8KYRdMEWpHNTZ3CtH0LsHPN2fNrrXNJEGgJ00eSZRA8SBBGDQuAKyzdok4fIS6D06PhabweeQ==";
+        const string accountURL = @"";
+        const string accountKey = @"";
         const string databaseId = @"Users";
         const string collectionId = @"OTK";
 
