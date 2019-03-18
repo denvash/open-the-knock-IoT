@@ -2,7 +2,7 @@
 
 OTK is an Arduino Project made as part of **Arduino Course** @ *Technion – Israel Institute of Technology*.
 
-Was a nominee for the best CS-Department project 🏆 (for the current semester).
+Was a nominee for the best CS-Department project  (for the current semester).
 
 OTK is a **Knocking-Lock**, a lock which opens on a specific rhythm of knocks and a LCD screen which provides the information of the current lock state.
 
@@ -19,6 +19,7 @@ A challenge form is filled by the client, the form is personal and will be used 
 - YouTube [Clip](https://www.youtube.com/watch?v=5NvydEw8dt8)
 - Editable [Poster](https://docs.google.com/presentation/d/1DuTG3v4OgOKBYX6L_xmy8E5fXFIII_hNHCgcsua83No/edit#slide=id.p1)
 - Best CS-Department Nominee [Application](/documents/OTK-application.pdf)
+- Project [Proposal](https://docs.google.com/document/d/1Ufyt-wkjjTNKOpU29cXHKdXe90z_VuW2G_VYgOrjaws/edit?usp=sharing)
 
 ## Team
 
