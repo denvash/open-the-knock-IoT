@@ -26,4 +26,4 @@ A challenge form is filled by the client, the form is personal and will be used 
 
 ![squad 1](https://user-images.githubusercontent.com/27515937/51446338-6c4ec400-1d19-11e9-8701-f989ca23bd53.png)
 
-*Jenya Leonti, Dennis Vasvhevnikov, Simon Louski*
+*Jenya Leonti, Dennis Vash, Simon Louski*
