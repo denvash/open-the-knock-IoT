@@ -18,7 +18,7 @@ A challenge form is filled by the client, the form is personal and will be used 
 
 - YouTube [Clip](https://www.youtube.com/watch?v=5NvydEw8dt8)
 - Editable [Poster](https://docs.google.com/presentation/d/1DuTG3v4OgOKBYX6L_xmy8E5fXFIII_hNHCgcsua83No/edit#slide=id.p1)
-- Best CS-Department Nominee [Application](/documents/OTK-application.pdf)
+- Best CS-Department Nominee [Application](/documents/OTK-application.pdf) (Hebrew)
 - Project [Proposal](https://docs.google.com/document/d/1Ufyt-wkjjTNKOpU29cXHKdXe90z_VuW2G_VYgOrjaws/edit?usp=sharing)
 - Challenges [Preview](https://docs.google.com/presentation/d/15VveWDuWZRcpuUBN2vWplr6g09zVUcH8m2xD6s4wSRc/edit?usp=sharing)
 
