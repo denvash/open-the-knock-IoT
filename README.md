@@ -6,7 +6,7 @@ Was a nominee for the best CS-Department project  (for the current semester).
 
 OTK is a **Knocking-Lock**, a lock which opens on a specific rhythm of knocks and a LCD screen which provides the information of the current lock state.
 
-A challenge form is filled by the client, the form is personal and will be used as the challenges answers. To open the lock the client must successfully handle a sequence of events:
+A challenge form is filled by the client in our mobile-application (written with [Xamarin](https://dotnet.microsoft.com/apps/xamarin)), the form is personal and will be used as the challenges answers. To open the lock the client must successfully handle a sequence of events:
 
 - Identification (using knocks).
 - Give a right solution (by sequence of knocks) for a randomize challenge which appears on the screen.
